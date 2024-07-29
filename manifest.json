@@ -6,27 +6,16 @@
     "display": "standalone",
     "orientation": "portrait",
     "background_color": "#f5f5f5",
-    "theme_color": "#000000",
+    "theme_color": "#f5f5f5",
     "description": "Sergei Pimenov is a staff software engineer at Pinterest, Ad Formats based in the San Francisco Bay Area. Previously, he led the Growth and Insights team at eBay. Before that he co-founded a early-stage startup Stork (a messenger app for distributed teams).",
     "icons": [
       {
-        "src": "./img/icons/64x64.png",
-        "sizes": "64x64",
+        "src": "./img/favicons/dark/android-chrome-192x192.png",
+        "sizes": "192x192",
         "type": "image/png"
       },
       {
-        "src": "./img/icons/128x128.png",
-        "sizes": "128x128",
-        "type": "image/png"
-      },
-      {
-        "src": "./img/icons/256x256.png",
-        "sizes": "256x256",
-        "type": "image/png",
-        "purpose": "any maskable"
-      },
-      {
-        "src": "./img/icons/512x512.png",
+        "src": "./img/favicons/dark/android-chrome-512x512.png",
         "sizes": "512x512",
         "type": "image/png"
       }
