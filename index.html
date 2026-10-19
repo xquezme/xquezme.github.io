@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" itemscope itemtype="https://schema.org/WebPage" prefix="og:http://ogp.me/ns#">
+<html lang="en" dir="ltr" prefix="og:http://ogp.me/ns#">
   <head>
     <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-    <link rel="canonical" href="https://sergeipimenov.com"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="canonical" href="https://sergeipimenov.com/"/>
     <link rel="icon" type="image/x-icon" href="./img/favicons/dark/favicon.ico" media="(prefers-color-scheme: dark)"/>
     <link rel="icon" type="image/x-icon" href="./img/favicons/light/favicon.ico" media="(prefers-color-scheme: light)"/>
     <link rel="icon" type="image/png" sizes="32x32" href="./img/favicons/dark/favicon-32x32.png" media="(prefers-color-scheme: dark)"/>
@@ -13,40 +13,42 @@
     <link rel="manifest" href="./manifest.json" />
 
     <!-- General -->
-    <title>Sergei Pimenov - Software Engineer</title>
-    <meta name="description" content="Sergei Pimenov is a staff software engineer at Pinterest, Ad Formats based in the San Francisco Bay Area. Previously, he led the Growth and Insights team at eBay. Before that he co-founded a early-stage startup Stork (a messenger app for distributed teams).">
+    <title>Sergei Pimenov | Staff Software Engineer at Pinterest</title>
+    <meta name="description" content="Sergei Pimenov is a Russian-American software engineer and Staff Software Engineer at Pinterest, interested in the Apple ecosystem, monetization, and advertising.">
     <meta name="author" content="Sergei Pimenov" />
-    <meta name="keywords" content="staff software engineer, iOS engineer, iOS developer, team leader"/>
     <meta name="referrer" content="strict-origin" />
 
-    <meta itemprop="name" content="Sergei Pimenov - Software Engineer" />
-    <meta itemprop="description" content="Sergei Pimenov is a staff software engineer at Pinterest, Ad Formats based in the San Francisco Bay Area. Previously, he led the Growth and Insights team at eBay. Before that he co-founded a early-stage startup Stork (a messenger app for distributed teams)." />
-    <meta itemprop="image" content="./img/icons/128x128.png" />
 
     <!-- Microsoft -->
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="msapplication-starturl" content="/" />
-    <meta name="msapplication-tooltip" content="Sergei Pimenov is a staff software engineer at Pinterest, Ad Formats based in the San Francisco Bay Area. Previously, he led the Growth and Insights team at eBay. Before that he co-founded a early-stage startup Stork (a messenger app for distributed teams)." />
+    <meta name="msapplication-tooltip" content="Sergei Pimenov is a Russian-American software engineer and Staff Software Engineer at Pinterest, interested in the Apple ecosystem, monetization, and advertising." />
     <meta name="msapplication-TileColor" content="#3c3c3c" />
     <meta name="msapplication-config" content="browserconfig.xml" />
 
     <!-- Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://sergeipimenov.com" />
-    <meta property="og:title" content="Sergei Pimenov - Software Engineer" />
-    <meta property="og:description" content="Sergei Pimenov is a staff software engineer at Pinterest, Ad Formats based in the San Francisco Bay Area. Previously, he led the Growth and Insights team at eBay. Before that he co-founded a early-stage startup Stork (a messenger app for distributed teams)." />
-    <meta property="og:image" content="./img/icons/600x600.png" />
+    <meta property="og:url" content="https://sergeipimenov.com/" />
+    <meta property="og:title" content="Sergei Pimenov | Staff Software Engineer at Pinterest" />
+    <meta property="og:description" content="Sergei Pimenov is a Russian-American software engineer and Staff Software Engineer at Pinterest, interested in the Apple ecosystem, monetization, and advertising." />
+    <meta property="og:image" content="https://sergeipimenov.com/img/icons/600x600.png" />
+    <meta property="og:image:width" content="600" />
+    <meta property="og:image:height" content="600" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:alt" content="Portrait of Sergei Pimenov" />
     <meta property="og:locale" content="en_US" />
 
     <!-- Twitter -->
-    <meta name="twitter:card" content="app" />
-    <meta name="twitter:title" content="Sergei Pimenov - Software Engineer" />
-    <meta name="twitter:description" content="Sergei Pimenov is a staff software engineer at Pinterest, Ad Formats based in the San Francisco Bay Area. Previously, he led the Growth and Insights team at eBay. Before that he co-founded a early-stage startup Stork (a messenger app for distributed teams)." />
-    <meta name="twitter:url" content="https://sergeipimenov.com" />
-    <meta name="twitter:image" content="./img/icons/512x512.png" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Sergei Pimenov | Staff Software Engineer at Pinterest" />
+    <meta name="twitter:description" content="Sergei Pimenov is a Russian-American software engineer and Staff Software Engineer at Pinterest, interested in the Apple ecosystem, monetization, and advertising." />
+    <meta name="twitter:url" content="https://sergeipimenov.com/" />
+    <meta name="twitter:image" content="https://sergeipimenov.com/img/icons/512x512.png" />
+
+    <meta name="twitter:image:alt" content="Portrait of Sergei Pimenov" />
 
     <!-- iOS -->
-    <meta name="apple-mobile-web-app-title" content="Sergei Pimenov - Software Engineer" />
+    <meta name="apple-mobile-web-app-title" content="Sergei Pimenov | Staff Software Engineer at Pinterest" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="#3c3c3c" />
     <link rel="apple-touch-icon" href="./img/favicons/dark/apple-touch-icon.png" media="(prefers-color-scheme: dark)"/>
@@ -69,143 +71,186 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "WebSite",
-        "publisher": {
-          "@type": "Organization",
-          "name": "Sergei Pimenov",
-          "url": "https://sergeipimenov.com",
-          "logo": {
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://sergeipimenov.com/#website",
+            "url": "https://sergeipimenov.com/",
+            "name": "Sergei Pimenov",
+            "description": "Sergei Pimenov is a Russian-American software engineer and Staff Software Engineer at Pinterest, interested in the Apple ecosystem, monetization, and advertising.",
+            "publisher": {
+              "@id": "https://sergeipimenov.com/#person"
+            },
+            "inLanguage": "en-US",
+            "alternateName": "Sergey Pimenov"
+          },
+          {
+            "@type": "ProfilePage",
+            "@id": "https://sergeipimenov.com/#webpage",
+            "url": "https://sergeipimenov.com/",
+            "name": "Sergei Pimenov | Staff Software Engineer at Pinterest",
+            "description": "Sergei Pimenov is a Russian-American software engineer and Staff Software Engineer at Pinterest, interested in the Apple ecosystem, monetization, and advertising.",
+            "isPartOf": {
+              "@id": "https://sergeipimenov.com/#website"
+            },
+            "mainEntity": {
+              "@id": "https://sergeipimenov.com/#person"
+            },
+            "inLanguage": "en-US",
+            "about": {
+              "@id": "https://sergeipimenov.com/#person"
+            },
+            "primaryImageOfPage": {
+              "@id": "https://sergeipimenov.com/#portrait"
+            }
+          },
+          {
+            "@type": "Person",
+            "name": "Sergei Pimenov",
+            "alternateName": "Sergey Pimenov",
+            "familyName": "Pimenov",
+            "birthDate": "1992-09-09",
+            "jobTitle": "Staff Software Engineer",
+            "knowsAbout": [
+              "iOS development",
+              "Apple ecosystem",
+              "Software engineering",
+              "Monetization",
+              "Advertising"
+            ],
+            "disambiguatingDescription": "Staff Software Engineer at Pinterest",
+            "url": "https://sergeipimenov.com/",
+            "image": {
+              "@id": "https://sergeipimenov.com/#portrait"
+            },
+            "nationality": [
+              {
+                "@type": "Country",
+                "name": "Russia"
+              },
+              {
+                "@type": "Country",
+                "name": "United States"
+              }
+            ],
+            "birthPlace": {
+              "@type": "Place",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Kazan",
+                "addressRegion": "Republic of Tatarstan",
+                "addressCountry": "Russia"
+              }
+            },
+            "gender": "male",
+            "worksFor": [
+              {
+                "@type": "Organization",
+                "name": "Pinterest Inc",
+                "sameAs": [
+                  "https://www.pinterest.com/",
+                  "https://x.com/pinterest",
+                  "https://www.facebook.com/pinterest",
+                  "https://www.linkedin.com/company/pinterest/"
+                ]
+              }
+            ],
+            "alumniOf": [
+              {
+                "@type": "CollegeOrUniversity",
+                "name": "Kazan Federal University",
+                "sameAs": [
+                  "https://en.wikipedia.org/wiki/Kazan_Federal_University",
+                  "https://eng.kpfu.ru/",
+                  "https://www.topuniversities.com/universities/kazan-volga-region-federal-university"
+                ]
+              }
+            ],
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "San Jose",
+              "addressRegion": "CA",
+              "addressCountry": "United States",
+              "postalCode": "95129"
+            },
+            "sameAs": [
+              "https://www.facebook.com/pimenov.sergei/",
+              "https://www.linkedin.com/in/pimenovsergei/",
+              "https://www.linkedin.com/in/pimenovsergey/",
+              "https://github.com/xquezme",
+              "https://www.wikidata.org/wiki/Q126878013",
+              "https://medium.com/@sergei-pimenov",
+              "https://www.crunchbase.com/person/sergei-pimenov",
+              "https://wellfound.com/u/spimenov",
+              "https://gist.github.com/xquezme"
+            ],
+            "@id": "https://sergeipimenov.com/#person",
+            "givenName": "Sergei",
+            "description": "Sergei Pimenov is a Russian-American software engineer and Staff Software Engineer at Pinterest, interested in the Apple ecosystem, monetization, and advertising.",
+            "mainEntityOfPage": {
+              "@id": "https://sergeipimenov.com/#webpage"
+            }
+          },
+          {
             "@type": "ImageObject",
-            "url": "https://sergeipimenov.com/img/icons/60x60.png",
-            "width": 60,
-            "height": 60
+            "@id": "https://sergeipimenov.com/#portrait",
+            "url": "https://sergeipimenov.com/img/icons/1200x1200.png",
+            "contentUrl": "https://sergeipimenov.com/img/icons/1200x1200.png",
+            "caption": "Portrait of Sergei Pimenov",
+            "width": 1200,
+            "height": 1200
           }
-        },
-        "url": "https://sergeipimenov.com",
-        "image": {
-          "@type": "ImageObject",
-          "url": "https://sergeipimenov.com/img/icons/1200x1200.png",
-          "width": 1200,
-          "height": 1200
-        },
-        "mainEntityOfPage": "https://sergeipimenov.com",
-        "description": "Sergei Pimenov is a staff software engineer at Pinterest, Ad Formats based in the San Francisco Bay Area. Previously, he led the Growth and Insights team at eBay. Before that he co-founded a early-stage startup Stork (a messenger app for distributed teams)."
-      }
-    </script>
-    <script type="application/ld+json">
-      {
-        "@context" : "https://schema.org",
-        "@type" : "Organization",
-        "name" : "Sergei Pimenov",
-        "url" : "https://sergeipimenov.com",
-        "sameAs" : [
-          "https://www.facebook.com/pimenov.sergei/",
-          "https://www.linkedin.com/in/pimenovsergei/",
-          "https://www.linkedin.com/in/pimenovsergey/",
-          "https://github.com/xquezme",
-          "https://www.wikidata.org/wiki/Q126878013",
-          "https://medium.com/@sergei-pimenov",
-          "https://www.crunchbase.com/person/sergei-pimenov",
-          "https://leetcode.com/u/xquezme/",
-          "https://wellfound.com/u/spimenov",
-          "https://www.pinterest.com/pimenovsergei"
-        ]
-      }
-      </script>
-    <script type="application/ld+json">
-      {
-        "@context": "http://schema.org/",
-        "@type": "Person",
-        "name": "Sergei Pimenov",
-        "alternateName": "Sergey Pimenov",
-        "familyName": "Pimenov",
-        "email": "pimenov.sergei@gmail.com",
-        "birthDate": "1992-09-09",
-        "jobTitle": "Staff Software Engineer, iOS",
-        "knowsAbout": "iOS development, early stage startups, team leading, programming",
-        "disambiguatingDescription": "Staff Software Engineer, iOS at Pinterest",
-        "url": "https://sergeipimenov.com",
-        "image": "https://sergeipimenov.com/img/icons/1200x1200.png",
-        "nationality": "Russia",
-        "birthPlace": {
-          "@type": "Place",
-          "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Kazan",
-            "addressRegion": "Republic of Tatarstan",
-            "addressCountry": "Russia"
-          }
-        },
-        "gender": "male",
-        "worksFor": [
-          {
-            "@type": "Organization",
-            "name": "Pinterest Inc",
-            "sameAs": [
-              "https://www.pinterest.com/",
-              "https://x.com/pinterest",
-              "https://www.facebook.com/pinterest",
-              "https://www.linkedin.com/company/pinterest/"
-            ]
-          }
-        ],
-        "alumniOf": [
-          {
-            "@type": "CollegeOrUniversity",
-            "name": "Kazan Federal University",
-            "sameAs": [
-              "https://en.wikipedia.org/wiki/Kazan_Federal_University",
-              "https://eng.kpfu.ru/",
-              "https://www.topuniversities.com/universities/kazan-volga-region-federal-university"
-            ]
-          }
-        ],
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "San Jose",
-          "addressRegion": "CA",
-          "addressCountry": "United States",
-          "postalCode": "95129"
-        },
-        "sameAs": [
-          "https://www.facebook.com/pimenov.sergei/",
-          "https://www.linkedin.com/in/pimenovsergei/",
-          "https://www.linkedin.com/in/pimenovsergey/",
-          "https://github.com/xquezme",
-          "https://www.wikidata.org/wiki/Q126878013",
-          "https://medium.com/@sergei-pimenov",
-          "https://www.crunchbase.com/person/sergei-pimenov",
-          "https://leetcode.com/u/xquezme/",
-          "https://wellfound.com/u/spimenov"
         ]
       }
     </script>
 
-    <link rel="preload" href="./styles/main.css" as="style" />
-    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="preload" href="./styles/main.css?v=e5ba38018d80" as="style" />
+    <link rel="stylesheet" href="./styles/main.css?v=e5ba38018d80" />
 
-    <style>
-      /* Critical CSS */
-    </style>
   </head>
   <body>
-    <main>
-      <picture>
-        <source srcset="./img/icons/300x300.png, ./img/icons/600x600.png 2x, ./img/icons/1200x1200.png 3x" />
-        <img decoding="async" loading="lazy" src="./img/icons/300x300.png" srcset="./img/icons/300x300.png, ./img/icons/600x600.png 2x, ./img/icons/1200x1200.png 3x" width="300" height="300" alt="Sergei Pimenov - Software Engineer"/>
-      </picture>
-      <h1>Sergei Pimenov</h1>
-      <h2>Staff Software Engineer, iOS at Pinterest, Performance Ad Formats Team, Monetization</h2>
-      <h3>San Jose, California, US @ 2024</h3>
+    <main id="main-content">
+      <header class="profile">
+        <img class="portrait" decoding="async" fetchpriority="high" src="./img/icons/300x300.png" srcset="./img/icons/300x300.png 1x, ./img/icons/600x600.png 2x, ./img/icons/1200x1200.png 3x" width="180" height="180" alt="Portrait of Sergei Pimenov" />
+        <h1>Sergei Pimenov</h1>
+        <p class="role">Staff Software Engineer at Pinterest</p>
+        <p class="location">Ad Formats &middot; San Jose, San Francisco Bay Area</p>
+      </header>
+      <section aria-labelledby="about-heading">
+        <h2 id="about-heading">About</h2>
+        <p>I&rsquo;m a Russian-American software engineer rooted in iOS and the Apple ecosystem. In the AI era, I&rsquo;ve broadened my focus as a generalist, with a particular interest in monetization and advertising.</p>
+      </section>
+      <section aria-labelledby="apps-heading">
+        <h2 id="apps-heading">Still alive on the App Store</h2>
+        <p>Apps I&rsquo;ve built or contributed to that are still out there.</p>
+        <ul class="apps-list">
+          <li><a href="https://apps.apple.com/us/app/pinterest/id429047995"><img src="./img/apps/pinterest.jpg" width="72" height="72" loading="lazy" decoding="async" alt="" /><span>Pinterest</span></a></li>
+          <li><a href="https://apps.apple.com/us/app/ebay-online-shopping-selling/id282614216"><img src="./img/apps/ebay.jpg" width="72" height="72" loading="lazy" decoding="async" alt="" /><span>eBay</span></a></li>
+          <li><a href="https://apps.apple.com/us/app/simple-ai-weight-loss-coach/id1467720176"><img src="./img/apps/simple.jpg" width="72" height="72" loading="lazy" decoding="async" alt="" /><span>Simple</span></a></li>
+          <li><a href="https://apps.apple.com/dk/app/clubsalling/id1435899095"><img src="./img/apps/clubsalling.jpg" width="72" height="72" loading="lazy" decoding="async" alt="" /><span>ClubSalling</span></a></li>
+          <li><a href="https://apps.apple.com/dk/app/netto-scan-go/id1216226806"><img src="./img/apps/netto.jpg" width="72" height="72" loading="lazy" decoding="async" alt="" /><span>Netto+ | Scan&amp;Go</span></a></li>
+          <li><a href="https://apps.apple.com/us/app/learn-spanish-with-easy-ten/id582671477"><img src="./img/apps/easy-ten.jpg" width="72" height="72" loading="lazy" decoding="async" alt="" /><span>Easy Ten</span></a></li>
+        </ul>
+      </section>
+      <section aria-labelledby="personal-heading">
+        <h2 id="personal-heading">Away from the keyboard</h2>
+        <ul>
+          <li>Favorite book: <a href="https://en.wikipedia.org/wiki/The_End_of_Eternity">The End of Eternity</a>.</li>
+          <li>Favorite albums: <a href="https://en.wikipedia.org/wiki/Per_Aspera_Ad_Astra_(album)">Per Aspera Ad Astra</a>, <a href="https://en.wikipedia.org/wiki/Geogaddi">Geogaddi</a>, <a href="https://en.wikipedia.org/wiki/Kanon_Pokajanen">Kanon Pokajanen</a>, and <a href="https://en.wikipedia.org/wiki/Yanqui_U.X.O.">Yanqui U.X.O.</a>.</li>
+          <li>I ride a <a href="https://www.bmw-motorrad.com.my/en/models/heritage/rninet/technicaldata.html">BMW R nineT</a>.</li>
+          <li>My <a href="https://en.wikipedia.org/wiki/Static_apnea">static apnea</a> personal best: <time datetime="PT3M57S">3 minutes 57 seconds</time>.</li>
+        </ul>
+      </section>
     </main>
     <footer>
-      <ul id="social-list">
-        <li><a id="social-facebook" title="Facebook" href="https://www.facebook.com/pimenov.sergei/"></a></li>
-        <li><a id="social-pinterest" title="Pinterest" href="https://www.pinterest.com/pimenovsergei"></a></li>
-        <li><a id="social-linkedin" title="LinkedIn" href="https://www.linkedin.com/in/pimenovsergei/"></a></li>
-        <li><a id="social-github" title="Github" href="https://github.com/xquezme"></a></li>
-        <li><a id="social-leetcode" title="LeetCode" href="https://leetcode.com/u/xquezme/"></a></li>
-      </ul>
+      <nav aria-label="Social profiles">
+        <ul id="social-list">
+          <li><a class="social-icon" id="social-linkedin" rel="me" href="https://www.linkedin.com/in/pimenovsergei/" aria-label="LinkedIn" title="LinkedIn"><span aria-hidden="true"></span></a></li>
+          <li><a class="social-icon" id="social-github" rel="me" href="https://github.com/xquezme" aria-label="GitHub" title="GitHub"><span aria-hidden="true"></span></a></li>
+          <li><a class="social-icon" id="social-facebook" rel="me" href="https://www.facebook.com/pimenov.sergei/" aria-label="Facebook" title="Facebook"><span aria-hidden="true"></span></a></li>
+        </ul>
+      </nav>
+      <p>&copy; 2026 Sergei Pimenov</p>
     </footer>
   </body>
 </html>

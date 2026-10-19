@@ -1,73 +1,98 @@
-body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-    background-color: #f5f5f5;
-    color: #000000;
-    touch-action: pan-y;
+:root {
+    color-scheme: light dark;
+    --background: #f5f5f5;
+    --text: #202124;
+    --muted: #565b63;
+    --link: #075eb5;
+    --border: #d5d8dc;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
-a {
-    color: #0A84FF;
+* { box-sizing: border-box; }
+
+body {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: clamp(24px, 6vw, 72px) 24px 24px;
+    background: var(--background);
+    color: var(--text);
+    font-size: 17px;
+    line-height: 1.7;
+    overflow-wrap: break-word;
 }
+
+.portrait {
+    display: block;
+    width: 180px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 24px;
+    margin-bottom: 28px;
+}
+
+h1 {
+    margin: 0 0 8px;
+    font-size: clamp(32px, 7vw, 48px);
+    line-height: 1.15;
+    letter-spacing: -0.035em;
+}
+
+.role {
+    margin: 0;
+    font-size: clamp(19px, 4vw, 24px);
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.location { margin: 8px 0 0; color: var(--muted); }
+section { margin-top: 40px; }
+h2 { margin: 0 0 12px; font-size: 21px; line-height: 1.4; }
+p { margin: 0 0 16px; }
+a { color: var(--link); text-underline-offset: 4px; }
+a:hover { text-decoration-thickness: 2px; }
+a:focus-visible { outline: 3px solid var(--link); outline-offset: 5px; border-radius: 2px; }
 
 #social-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 24px;
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 8px 0 0;
 }
 
-#social-list li {
-    display: inline-block;
-    padding-right: 0.5em;
-}
-
-#social-list li:last-child {
-    padding-right: 0;
-}
-
-#social-list a {
-    mask-size: contain;
-    display: inline-block;
-    background-color: #000000;
+#social-list a { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; }
+#social-list .social-icon { min-width: 44px; color: var(--text); }
+.social-icon span {
+    display: block;
     width: 32px;
     height: 32px;
+    background-color: currentColor;
+    -webkit-mask: var(--icon) center / contain no-repeat;
+    mask: var(--icon) center / contain no-repeat;
 }
+#social-linkedin { --icon: url("../img/icons/social/cib-linkedin.svg"); }
+#social-github { --icon: url("../img/icons/social/cib-github.svg"); }
+#social-facebook { --icon: url("../img/icons/social/cib-facebook.svg"); }
+footer { margin-top: 48px; padding-top: 0; border-top: 1px solid var(--border); color: var(--muted); font-size: 14px; }
+footer nav { padding: 24px 0; }
+footer #social-list { margin: 0; }
+footer p { margin: 0; }
 
-#social-facebook {
-    -webkit-mask-image: url("./../img/icons/social/cib-facebook.svg");
-    mask-image: url("./../img/icons/social/cib-facebook.svg");
-}
-
-#social-pinterest {
-    -webkit-mask-image: url("./../img/icons/social/cib-pinterest.svg");
-    mask-image: url("./../img/icons/social/cib-pinterest.svg");
-}
-
-#social-linkedin {
-    -webkit-mask-image: url("./../img/icons/social/cib-linkedin.svg");
-    mask-image: url("./../img/icons/social/cib-linkedin.svg");
-}
-
-#social-github {
-    -webkit-mask-image: url("./../img/icons/social/cib-github.svg");
-    mask-image: url("./../img/icons/social/cib-github.svg");
-}
-
-#social-leetcode {
-    -webkit-mask-image: url("./../img/icons/social/cib-leetcode.svg");
-    mask-image: url("./../img/icons/social/cib-leetcode.svg");
-}
-
-@media screen and (prefers-color-scheme: dark) {
-    body {
-        background-color: #1c1c1e;
-        color: #ffffff;
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background: #1c1c1e;
+        --text: #f5f5f7;
+        --muted: #b1b1ba;
+        --link: #80baff;
+        --border: #3b3b40;
     }
+}
 
-    a {
-        color: #007AFF;
-    }
+.apps-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); gap: 24px 16px; list-style: none; padding: 0; margin: 24px 0 0; }
+.apps-list a { display: flex; flex-direction: column; align-items: center; gap: 10px; text-align: center; font-size: 14px; line-height: 1.4; }
+.apps-list img { display: block; border-radius: 16px; width: 72px; height: 72px; }
 
-    #social-list a {
-        background-color: #ffffff;
-    }
+@media (prefers-color-scheme: dark) {
+    #social-list .social-icon { color: #ffffff; }
 }
